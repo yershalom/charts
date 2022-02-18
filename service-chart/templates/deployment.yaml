@@ -44,10 +44,10 @@ spec:
               containerPort: {{ .Values.service.port }}
               protocol: TCP
           livenessProbe:
-            tcpSocket:
+            httpGet:
               port: {{ .Values.service.port }}
           readinessProbe:
-            tcpSocket:
+            httpGet:
               port: {{ .Values.service.port }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
