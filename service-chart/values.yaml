@@ -82,3 +82,6 @@ tolerations: []
 affinity: {}
 
 envFromConfigMap: []
+
+probes:
+  http: []
