@@ -20,6 +20,7 @@ spec:
       labels:
         {{- include "service-chart.selectorLabels" . | nindent 8 }}
     spec:
+      {{- if .Values.secretToFetch }}
       volumes:
       - name: secrets-store-inline
         csi:
@@ -27,6 +28,7 @@ spec:
           readOnly: true
           volumeAttributes:
             secretProviderClass: {{ .Values.nameOverride }}-aws-secret
+      {{- end }}
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
@@ -50,10 +52,12 @@ spec:
                 name: {{ .Values.envFromConfigMap.name }}
                 optional: true
           {{- end }}
+          {{- if .Values.secretToFetch }}
           volumeMounts:
           - name: secrets-store-inline
             mountPath: "/mnt/secrets-store"
             readOnly: true
+          {{- end }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
