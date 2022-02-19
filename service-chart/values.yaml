@@ -83,5 +83,8 @@ affinity: {}
 
 envFromConfigMap: []
 
-probes:
-  http: []
+secretToFetch: []
+#  - kubeSecretName: ""
+#    awsSecretName: ""
+#    envName: ""
+#    secretKey: ""

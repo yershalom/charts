@@ -20,6 +20,13 @@ spec:
       labels:
         {{- include "service-chart.selectorLabels" . | nindent 8 }}
     spec:
+      volumes:
+      - name: secrets
+        csi:
+          driver: secrets-store.csi.k8s.io
+          readOnly: true
+          volumeAttributes:
+            secretProviderClass: {{ .Values.nameOverride }}-aws-secret
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
@@ -29,12 +36,24 @@ spec:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
         - name: {{ .Values.nameOverride }}
+          env:
+            {{- range .Values.secretToFetch }}
+            - name: {{ .envName }}
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .kubeSecretName }}
+            {{- end }}
+            - name: FRONTEGG
           {{- if .Values.envFromConfigMap }}
           envFrom:
             - configMapRef:
                 name: {{ .Values.envFromConfigMap.name }}
                 optional: true
           {{- end }}
+          volumeMounts:
+          - name: secrets
+            mountPath: "/mnt/secrets-store"
+            readOnly: true
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
@@ -44,10 +63,10 @@ spec:
               containerPort: {{ .Values.service.port }}
               protocol: TCP
           livenessProbe:
-            httpGet:
+            tcpSocket:
               port: {{ .Values.service.port }}
           readinessProbe:
-            httpGet:
+            tcpSocket:
               port: {{ .Values.service.port }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
@@ -63,4 +82,3 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-
