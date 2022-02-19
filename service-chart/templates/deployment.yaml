@@ -42,6 +42,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: {{ .kubeSecretName }}
+                  key: {{ .secretKey }}
             {{- end }}
             - name: FRONTEGG
           {{- if .Values.envFromConfigMap }}
