@@ -3,7 +3,7 @@ entries:
   service-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-19T16:17:08.351482+02:00"
+    created: "2022-02-19T16:17:34.743977+02:00"
     description: A Helm chart for Kubernetes
     digest: 72f5a5175460b67ff6f09c744205fef1e5cb714510e53152cc55c64c473a9dbe
     name: service-chart
@@ -13,7 +13,7 @@ entries:
     version: 0.11.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-19T16:17:08.350882+02:00"
+    created: "2022-02-19T16:17:34.743406+02:00"
     description: A Helm chart for Kubernetes
     digest: a2b1058d4ed4f79c6f28a4db1b57ba319d082e5bc4403ee82bbb715196422233
     name: service-chart
@@ -21,84 +21,4 @@ entries:
     urls:
     - https://yershalom.github.io/charts/service-chart-0.10.0.tgz
     version: 0.10.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-02-19T16:17:08.356958+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 76a4edac1a25b9cd6fa0d6a82532c8aa37352da0eafaee70fa063a931429240c
-    name: service-chart
-    type: application
-    urls:
-    - https://yershalom.github.io/charts/service-chart-0.9.0.tgz
-    version: 0.9.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-02-19T16:17:08.356355+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 1f7feab5783516cbcb94657ae5916b4dcae98b20f620f5b331f2c70929fd71a5
-    name: service-chart
-    type: application
-    urls:
-    - https://yershalom.github.io/charts/service-chart-0.8.0.tgz
-    version: 0.8.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-02-19T16:17:08.354941+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 67e34dbf33d97bbbe6f32b6181b9f0889d2fbdddfe09a986c5bb824690ac1619
-    name: service-chart
-    type: application
-    urls:
-    - https://yershalom.github.io/charts/service-chart-0.7.0.tgz
-    version: 0.7.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-02-19T16:17:08.354369+02:00"
-    description: A Helm chart for Kubernetes
-    digest: f7e9fc05a523b7b171502f59798b9e59b22fceb6c379faf5d47adf2fd95d8c0a
-    name: service-chart
-    type: application
-    urls:
-    - https://yershalom.github.io/charts/service-chart-0.6.0.tgz
-    version: 0.6.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-02-19T16:17:08.353815+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 1181f895d1daaffba36ffbbe86a57be9e1f6a3db816e9eb7916267362438623e
-    name: service-chart
-    type: application
-    urls:
-    - https://yershalom.github.io/charts/service-chart-0.5.0.tgz
-    version: 0.5.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-02-19T16:17:08.353251+02:00"
-    description: A Helm chart for Kubernetes
-    digest: a1c5a09a0a06eb25991ef657920187b0664f2ab9d206c0e9ea9a3a5ccfd4c027
-    name: service-chart
-    type: application
-    urls:
-    - https://yershalom.github.io/charts/service-chart-0.4.0.tgz
-    version: 0.4.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-02-19T16:17:08.352579+02:00"
-    description: A Helm chart for Kubernetes
-    digest: e649cbd0e3bb0d10345ac408ae96d79b6a0042d9dea30c0900e8d5e21ab92674
-    name: service-chart
-    type: application
-    urls:
-    - https://yershalom.github.io/charts/service-chart-0.3.0.tgz
-    version: 0.3.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-02-19T16:17:08.352042+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 5f0cb418c9a1faa3548a65cd6013d7dac51b7a602d20f5c0b80f713ed8630322
-    name: service-chart
-    type: application
-    urls:
-    - https://yershalom.github.io/charts/service-chart-0.2.0.tgz
-    version: 0.2.0
-generated: "2022-02-19T16:17:08.350149+02:00"
+generated: "2022-02-19T16:17:34.742711+02:00"
