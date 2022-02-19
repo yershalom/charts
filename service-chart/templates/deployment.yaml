@@ -21,7 +21,7 @@ spec:
         {{- include "service-chart.selectorLabels" . | nindent 8 }}
     spec:
       volumes:
-      - name: secrets
+      - name: secrets-store-inline
         csi:
           driver: secrets-store.csi.k8s.io
           readOnly: true
@@ -44,7 +44,6 @@ spec:
                   name: {{ .kubeSecretName }}
                   key: {{ .secretKey }}
             {{- end }}
-            - name: FRONTEGG
           {{- if .Values.envFromConfigMap }}
           envFrom:
             - configMapRef:
@@ -52,7 +51,7 @@ spec:
                 optional: true
           {{- end }}
           volumeMounts:
-          - name: secrets
+          - name: secrets-store-inline
             mountPath: "/mnt/secrets-store"
             readOnly: true
           securityContext:
