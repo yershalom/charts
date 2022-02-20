@@ -88,3 +88,11 @@ secretToFetch: []
 #    awsSecretName: ""
 #    envName: ""
 #    secretKey: ""
+
+livenessProbe:
+  exec: {}
+  tcp: {}
+
+readinessProbe:
+  exec: { }
+  tcp: { }
