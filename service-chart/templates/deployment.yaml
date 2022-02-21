@@ -64,12 +64,12 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
-              containerPort: {{ .Values.service.port }}
+              containerPort: {{ .Values.service.targetPort }}
               protocol: TCP
           livenessProbe:
             {{- if .Values.livenessProbe.tcp }}
             tcpSocket:
-              port: {{ .Values.service.port }}
+              port: {{ .Values.service.targetPort }}
             {{- end }}
             {{- if .Values.livenessProbe.exec }}
             exec:
@@ -79,7 +79,7 @@ spec:
           readinessProbe:
             {{- if .Values.readinessProbe.tcp }}
             tcpSocket:
-              port: {{ .Values.service.port }}
+              port: {{ .Values.service.targetPort }}
             {{- end }}
             {{- if .Values.readinessProbe.exec }}
             exec:
