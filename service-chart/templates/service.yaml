@@ -4,6 +4,8 @@ metadata:
   name: {{ include "service-chart.fullname" . }}
   labels:
     {{- include "service-chart.labels" . | nindent 4 }}
+  annotations:
+    {{ toYaml .Values.service.annotations | indent 4 }}
 spec:
   type: {{ .Values.service.type }}
   {{- if .Values.service.externalName }}
