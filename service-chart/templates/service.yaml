@@ -4,8 +4,10 @@ metadata:
   name: {{ include "service-chart.fullname" . }}
   labels:
     {{- include "service-chart.labels" . | nindent 4 }}
+  {{- with .Values.service.annotations }}
   annotations:
-    {{ toYaml .Values.service.annotations | indent 4 }}
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
 spec:
   type: {{ .Values.service.type }}
   {{- if .Values.service.externalName }}
