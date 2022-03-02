@@ -67,6 +67,7 @@ spec:
               containerPort: {{ .Values.service.targetPort }}
               protocol: TCP
           livenessProbe:
+            failureThreshold: {{ .Values.livenessProbe.failureThreshold }}
             {{- if .Values.livenessProbe.tcp }}
             tcpSocket:
               port: {{ .Values.service.targetPort }}
@@ -77,6 +78,7 @@ spec:
                 {{ .Values.livenessProbe.exec.command }}
             {{- end }}
           readinessProbe:
+            failureThreshold: {{ .Values.readinessProbe.failureThreshold }}
             {{- if .Values.readinessProbe.tcp }}
             tcpSocket:
               port: {{ .Values.service.targetPort }}
