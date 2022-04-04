@@ -52,12 +52,10 @@ spec:
                 name: {{ .Values.envFromConfigMap.name }}
                 optional: true
           {{- end }}
-          {{- if .Values.secretToFetch }}
+        {{- if .Values.deployment.volumesMount }}
           volumeMounts:
-          - name: secrets-store-inline
-            mountPath: "/mnt/secrets-store"
-            readOnly: true
-          {{- end }}
+            {{- toYaml .Values.deployment.volumesMount | nindent 12 }}
+        {{- end }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
@@ -101,4 +99,8 @@ spec:
       {{- with .Values.tolerations }}
       tolerations:
         {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- if .Values.deployment.volumes }}
+      volumes:
+      {{- toYaml .Values.deployment.volumes | nindent 8 }}
       {{- end }}
