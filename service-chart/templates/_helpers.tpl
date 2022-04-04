@@ -64,6 +64,30 @@ Create the name of the service account to use
 
 {{- define "pvc.lookup" -}}
 {{- if .Values.pvc.create }}
+{{- if not .Values.pvc.name -}}
+{{- fail "A valid .Values.pvc.name entry required!" -}}
+{{- end -}}
+{{- if not (lookup "v1" "PersistentVolumeClaim" .Release.Namespace .Values.pvc.name ) }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ .Values.pvc.name }}
+  annotations:
+  {{- toYaml .Values.pvc.annotations | nindent 4 }}
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: {{ required "A valid .Values.pvc.storageClass entry required!" .Values.pvc.storageClass }}
+  resources:
+    requests:
+      storage: {{ required "A valid .Values.pvc.storageSize entry required!" .Values.pvc.storageSize }}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+
+
+{{- define "pvc.lookup" -}}
+{{- if .Values.pvc.create }}
 {{ required "A valid .Values.pvc.name entry required!" .Values.pvc.name }}
 {{- if not (lookup "v1" "PersistentVolumeClaim" .Release.Namespace .Values.pvc.name ) }}
 apiVersion: v1
