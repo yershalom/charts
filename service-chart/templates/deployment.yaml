@@ -20,15 +20,6 @@ spec:
       labels:
         {{- include "service-chart.selectorLabels" . | nindent 8 }}
     spec:
-      {{- if .Values.secretToFetch }}
-      volumes:
-      - name: secrets-store-inline
-        csi:
-          driver: secrets-store.csi.k8s.io
-          readOnly: true
-          volumeAttributes:
-            secretProviderClass: {{ .Values.nameOverride }}-aws-secret
-      {{- end }}
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
