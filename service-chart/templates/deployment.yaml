@@ -43,9 +43,9 @@ spec:
                 name: {{ .Values.envFromConfigMap.name }}
                 optional: true
           {{- end }}
-        {{- if .Values.deployment.volumesMount }}
+        {{- if .Values.volumesMount }}
           volumeMounts:
-            {{- toYaml .Values.deployment.volumesMount | nindent 12 }}
+            {{- toYaml .Values.volumesMount | nindent 12 }}
         {{- end }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
@@ -91,7 +91,7 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      {{- if .Values.deployment.volumes }}
+      {{- if .Values.volumes }}
       volumes:
-      {{- toYaml .Values.deployment.volumes | nindent 8 }}
+      {{- toYaml .Values.volumes | nindent 8 }}
       {{- end }}

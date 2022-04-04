@@ -112,13 +112,12 @@ pvc:
   #storageClass: efs-sc
   #storageSize: 50Gi
 
-deployment:
-  volumes: {}
-   # If you do want to specify volumes, uncomment the following
-   # lines, adjust them as necessary, and remove the curly braces after 'volumes:'.
-   # - name: my-volume
-   #   persistentVolumeClaim:
-   #      claimName: my-claim-name
-  volumesMount: {}
-   # - name: my-volume
-   #   mountPath: my-mount-path
+volumes: {}
+  # If you do want to specify volumes, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'volumes:'.
+  # - name: my-volume
+  #   persistentVolumeClaim:
+  #      claimName: my-claim-name
+volumesMount: {}
+  # - name: my-volume
+  #   mountPath: my-mount-path
