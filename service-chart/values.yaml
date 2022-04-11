@@ -126,6 +126,7 @@ kedaScale:
   maxReplicaCount: 1
   cooldownPeriod: 300
   bootstrapServers: kafka:9092
+  enableTLS: false
   triggers: []
 #  - topic: topic1
 #    lagThreshold: "10"
