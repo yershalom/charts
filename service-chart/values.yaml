@@ -117,3 +117,17 @@ volumes: {}
 volumesMount: {}
   # - name: my-volume
   #   mountPath: my-mount-path
+
+kedaScale:
+  enabled: false
+  namespace: default
+  pollingInterval: 5
+  minReplicaCount: 0
+  maxReplicaCount: 1
+  cooldownPeriod: 300
+  brokerList: kafka:9092
+  triggers: []
+#  - topic: topic1
+#    lagThreshold: 10
+#  - topic: topic2
+#    lagThreshold: 10

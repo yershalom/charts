@@ -1,0 +1,25 @@
+{{- if .Values.kedaScale.enabled -}}
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: {{ .Values.nameOverride }}-scaledobject
+  namespace: {{ .Values.kedaScale.namespace }}
+  labels:
+    name: {{ .Values.nameOverride }} # Required Name of the deployment we want to scale.
+spec:
+  scaleTargetRef:
+    name: {{ .Values.nameOverride }} # Required Name of the deployment we want to scale.
+  pollingInterval: {{ .Values.kedaScale.pollingInterval }}
+  minReplicaCount: {{ .Values.kedaScale.minReplicaCount }}
+  maxReplicaCount: {{ .Values.kedaScale.maxReplicaCount }}
+  cooldownPeriod: {{ .Values.kedaScale.cooldownPeriod }}
+  triggers:
+  {{- range .Values.kedaScale.triggers }}
+  - type: kafka
+    metadata:
+      brokerList: {{ $.Values.kedaScale.brokerList }}
+      consumerGroup: {{ $.Values.nameOverride }}-consumer-group-server  # Make sure that this consumer group name is the same one as the one that is consuming topics
+      topic: {{ .topic }}
+      lagThreshold: {{ .lagThreshold }}
+  {{- end }}
+{{- end }}
