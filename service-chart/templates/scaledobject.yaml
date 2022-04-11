@@ -21,7 +21,7 @@ spec:
       consumerGroup: {{ $.Values.nameOverride }}-consumer-group-server  # Make sure that this consumer group name is the same one as the one that is consuming topics
       topic: {{ .topic }}
       lagThreshold: {{ .lagThreshold | quote }}
-    {{- if $.Values.kedaScale.enableTLS -}}
+    {{- if $.Values.kedaScale.enableTLS }}
     authenticationRef:
       name: keda-trigger-auth-kafka
     {{- end }}
