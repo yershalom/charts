@@ -17,7 +17,7 @@ spec:
   {{- range .Values.kedaScale.triggers }}
   - type: kafka
     metadata:
-      brokerList: {{ $.Values.kedaScale.brokerList }}
+      bootstrapServers: {{ $.Values.kedaScale.brokerList }}
       consumerGroup: {{ $.Values.nameOverride }}-consumer-group-server  # Make sure that this consumer group name is the same one as the one that is consuming topics
       topic: {{ .topic }}
       lagThreshold: {{ .lagThreshold | quote }}
