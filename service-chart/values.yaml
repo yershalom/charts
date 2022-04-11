@@ -128,6 +128,6 @@ kedaScale:
   brokerList: kafka:9092
   triggers: []
 #  - topic: topic1
-#    lagThreshold: 10
+#    lagThreshold: "10"
 #  - topic: topic2
-#    lagThreshold: 10
+#    lagThreshold: "10"

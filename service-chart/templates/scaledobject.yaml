@@ -20,6 +20,6 @@ spec:
       brokerList: {{ $.Values.kedaScale.brokerList }}
       consumerGroup: {{ $.Values.nameOverride }}-consumer-group-server  # Make sure that this consumer group name is the same one as the one that is consuming topics
       topic: {{ .topic }}
-      lagThreshold: {{ .lagThreshold }}
+      lagThreshold: {{ .lagThreshold | quote }}
   {{- end }}
 {{- end }}
