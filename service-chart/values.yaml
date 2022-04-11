@@ -97,14 +97,9 @@ secretToFetch: []
 
 livenessProbe:
   failureThreshold: 3
-  exec: {}
-  tcp: false
 
 readinessProbe:
   failureThreshold: 3
-  exec: { }
-  tcp: false
-
 
 pvc:
   create: false

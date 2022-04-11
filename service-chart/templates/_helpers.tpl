@@ -84,3 +84,28 @@ spec:
 {{- end -}}
 {{- end -}}
 {{- end -}}
+
+{{- define "tplvalues.render" -}}
+    {{- if typeIs "string" .value }}
+        {{- tpl .value .context }}
+    {{- else }}
+        {{- tpl (.value | toYaml) .context }}
+    {{- end }}
+{{- end -}}
+
+{{- define "getOrDefault" }}
+  {{- $v := .Values }}
+  {{- $found := true }}
+  {{- range $value := regexSplit "\\." .Path -1 }}
+    {{- if hasKey $v $value }}
+      {{- $v = get $v $value }}
+    {{- else }}
+      {{- $found = false }}
+    {{- end }}
+  {{- end }}
+  {{- if eq $found true }}
+    {{- $v }}
+  {{- else }}
+    {{- .Default }}
+  {{- end }}
+{{- end }}
