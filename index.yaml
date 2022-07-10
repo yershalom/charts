@@ -3,223 +3,163 @@ entries:
   ecr-credentials-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-06-27T09:53:57.803747+03:00"
+    created: "2022-07-10T16:54:49.571523+03:00"
     description: A Helm chart for Kubernetes
     digest: 8451b242141822278b90bdeb9e289c6fe305717f52e6ead6160e819765e6fc01
     name: ecr-credentials-chart
     type: application
     urls:
-    - ecr-credentials-chart-0.4.3.tgz
+    - https://yershalom.github.io/charts/ecr-credentials-chart-0.4.3.tgz
     version: 0.4.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-06-27T09:53:57.803201+03:00"
+    created: "2022-07-10T16:54:49.570903+03:00"
     description: A Helm chart for Kubernetes
     digest: 2816d74be9f66f1dc89a1feb9206c9e7c2e23335113961c759be2d0b3c9cbdad
     name: ecr-credentials-chart
     type: application
     urls:
-    - ecr-credentials-chart-0.4.2.tgz
+    - https://yershalom.github.io/charts/ecr-credentials-chart-0.4.2.tgz
     version: 0.4.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-06-27T09:53:57.802613+03:00"
+    created: "2022-07-10T16:54:49.570255+03:00"
     description: A Helm chart for Kubernetes
     digest: ba10cd359706990d237c57e0f42d606c428227ee2b9d05c3693336e62201d7a2
     name: ecr-credentials-chart
     type: application
     urls:
-    - ecr-credentials-chart-0.4.1.tgz
+    - https://yershalom.github.io/charts/ecr-credentials-chart-0.4.1.tgz
     version: 0.4.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-06-27T09:53:57.802243+03:00"
+    created: "2022-07-10T16:54:49.569367+03:00"
     description: A Helm chart for Kubernetes
     digest: becf82e7469b93b34dc1aed051d2f3945bea4421c0ff35177b111999fec226cd
     name: ecr-credentials-chart
     type: application
     urls:
-    - ecr-credentials-chart-0.2.0.tgz
+    - https://yershalom.github.io/charts/ecr-credentials-chart-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-06-27T09:53:57.801831+03:00"
+    created: "2022-07-10T16:54:49.568827+03:00"
     description: A Helm chart for Kubernetes
     digest: 01f87893ec902311e24eaaf67f1f1f04e3206221786d9a2b14cdfb9b5a6745a5
     name: ecr-credentials-chart
     type: application
     urls:
-    - ecr-credentials-chart-0.1.0.tgz
+    - https://yershalom.github.io/charts/ecr-credentials-chart-0.1.0.tgz
     version: 0.1.0
   service-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.813289+03:00"
+    created: "2022-07-10T16:54:49.584235+03:00"
+    description: A Helm chart for Kubernetes
+    digest: d3ca7122be719b6638f10dffb92976ef985859d88e847ac5b694ad62debf1342
+    name: service-chart
+    type: application
+    urls:
+    - https://yershalom.github.io/charts/service-chart-0.47.0.tgz
+    version: 0.47.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-10T16:54:49.58317+03:00"
+    description: A Helm chart for Kubernetes
+    digest: bb0c2974c7968c20c6d7d4b1b53638e25575757223f5351799cae7a38f59650d
+    name: service-chart
+    type: application
+    urls:
+    - https://yershalom.github.io/charts/service-chart-0.46.0.tgz
+    version: 0.46.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-10T16:54:49.582062+03:00"
     description: A Helm chart for Kubernetes
     digest: 6dfe1be4458b0cb35be93311e5bbbca590466366b97408d8c800246371b62def
     name: service-chart
     type: application
     urls:
-    - service-chart-0.45.0.tgz
+    - https://yershalom.github.io/charts/service-chart-0.45.0.tgz
     version: 0.45.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.812732+03:00"
+    created: "2022-07-10T16:54:49.580962+03:00"
     description: A Helm chart for Kubernetes
     digest: 2c4b7e287578193cc24fff139cce875e259138de3e6f6766a284fa743904a9d9
     name: service-chart
     type: application
     urls:
-    - service-chart-0.41.0.tgz
+    - https://yershalom.github.io/charts/service-chart-0.41.0.tgz
     version: 0.41.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.812187+03:00"
+    created: "2022-07-10T16:54:49.579817+03:00"
     description: A Helm chart for Kubernetes
     digest: 6ba16f7836d76445b4851c62ef8ffc60c94d0f8ad5f520460aaae72312d65289
     name: service-chart
     type: application
     urls:
-    - service-chart-0.40.0.tgz
+    - https://yershalom.github.io/charts/service-chart-0.40.0.tgz
     version: 0.40.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.811599+03:00"
+    created: "2022-07-10T16:54:49.578682+03:00"
     description: A Helm chart for Kubernetes
     digest: 4e1098619df18711adea5e94baec998c94592778d0f74037a6cc93ab674b9819
     name: service-chart
     type: application
     urls:
-    - service-chart-0.39.0.tgz
+    - https://yershalom.github.io/charts/service-chart-0.39.0.tgz
     version: 0.39.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.811048+03:00"
+    created: "2022-07-10T16:54:49.577879+03:00"
     description: A Helm chart for Kubernetes
     digest: ff87b4a3a608fd953ccb185c306549f1e4d7857ba6926d6ac93703ac1768f55a
     name: service-chart
     type: application
     urls:
-    - service-chart-0.38.0.tgz
+    - https://yershalom.github.io/charts/service-chart-0.38.0.tgz
     version: 0.38.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.810492+03:00"
+    created: "2022-07-10T16:54:49.576956+03:00"
     description: A Helm chart for Kubernetes
     digest: 006114d096da33d253b03f093e9fd8e9b92d0fb992718f9750896394ae1742e3
     name: service-chart
     type: application
     urls:
-    - service-chart-0.37.0.tgz
+    - https://yershalom.github.io/charts/service-chart-0.37.0.tgz
     version: 0.37.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.809934+03:00"
+    created: "2022-07-10T16:54:49.576135+03:00"
     description: A Helm chart for Kubernetes
     digest: 666ccaedf69c225aef8f55b1a78654951e73c4d7a4007d7a5f7e9417e4b93db6
     name: service-chart
     type: application
     urls:
-    - service-chart-0.35.0.tgz
+    - https://yershalom.github.io/charts/service-chart-0.35.0.tgz
     version: 0.35.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.809507+03:00"
+    created: "2022-07-10T16:54:49.574996+03:00"
     description: A Helm chart for Kubernetes
     digest: 22e17c4ba7f94adf0ac49e2c0f8c0f5aa43324a0cd62c3286ece4fb205670d18
     name: service-chart
     type: application
     urls:
-    - service-chart-0.34.0.tgz
+    - https://yershalom.github.io/charts/service-chart-0.34.0.tgz
     version: 0.34.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.809052+03:00"
+    created: "2022-07-10T16:54:49.572896+03:00"
     description: A Helm chart for Kubernetes
     digest: e5ba7c53afa978d5140318f3555c55a345a78ed36f07bb26e57755f88b69e901
     name: service-chart
     type: application
     urls:
-    - service-chart-0.33.0.tgz
+    - https://yershalom.github.io/charts/service-chart-0.33.0.tgz
     version: 0.33.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.808501+03:00"
-    description: A Helm chart for Kubernetes
-    digest: ed664f38199924eab9fb34d75fc3080ca1586ff171db9d432f2e42224e92cba7
-    name: service-chart
-    type: application
-    urls:
-    - service-chart-0.30.0.tgz
-    version: 0.30.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.807924+03:00"
-    description: A Helm chart for Kubernetes
-    digest: 05e308ce346215d60d8efd41f7af67ca72f56aabee9e32d55f43314c429f12e1
-    name: service-chart
-    type: application
-    urls:
-    - service-chart-0.29.0.tgz
-    version: 0.29.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.807347+03:00"
-    description: A Helm chart for Kubernetes
-    digest: 927b7e28fae6b1a257d73c19a0d999a4523c9ce32c4b3cfdfe7b09e094fc45e6
-    name: service-chart
-    type: application
-    urls:
-    - service-chart-0.28.0.tgz
-    version: 0.28.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.806351+03:00"
-    description: A Helm chart for Kubernetes
-    digest: 4d6fda7d5159cea80c8ccecc26e411272e7d9f7df81cc4cd2ad4e967977add3d
-    name: service-chart
-    type: application
-    urls:
-    - service-chart-0.27.0.tgz
-    version: 0.27.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.805815+03:00"
-    description: A Helm chart for Kubernetes
-    digest: 4acb064626640f2aef61cf4a5327c00b75021ee939521866def00c6ac9a21ae7
-    name: service-chart
-    type: application
-    urls:
-    - service-chart-0.26.0.tgz
-    version: 0.26.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.805301+03:00"
-    description: A Helm chart for Kubernetes
-    digest: f99a131bdb4ef3055cde8a0af1a2da6046ce6e42a1dc52ab61db7825e54d6968
-    name: service-chart
-    type: application
-    urls:
-    - service-chart-0.25.0.tgz
-    version: 0.25.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.804769+03:00"
-    description: A Helm chart for Kubernetes
-    digest: 8481d9d4c9d25334c906e5f62b434088cb5868da88b257d190d5dbec4395f79d
-    name: service-chart
-    type: application
-    urls:
-    - service-chart-0.23.0.tgz
-    version: 0.23.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-06-27T09:53:57.804261+03:00"
-    description: A Helm chart for Kubernetes
-    digest: 1d90f3bab8fbbfa8f7534452d00ce2ffb3f4564afa1be531f38dd3e5b0229dd0
-    name: service-chart
-    type: application
-    urls:
-    - service-chart-0.22.0.tgz
-    version: 0.22.0
-generated: "2022-06-27T09:53:57.801299+03:00"
+generated: "2022-07-10T16:54:49.568045+03:00"
