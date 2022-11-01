@@ -3,7 +3,7 @@ entries:
   ecr-credentials-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-30T10:04:44.120987+02:00"
+    created: "2022-11-01T10:43:51.673387+02:00"
     description: A Helm chart for Kubernetes
     digest: 8451b242141822278b90bdeb9e289c6fe305717f52e6ead6160e819765e6fc01
     name: ecr-credentials-chart
@@ -13,7 +13,7 @@ entries:
     version: 0.4.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-30T10:04:44.119739+02:00"
+    created: "2022-11-01T10:43:51.672929+02:00"
     description: A Helm chart for Kubernetes
     digest: 2816d74be9f66f1dc89a1feb9206c9e7c2e23335113961c759be2d0b3c9cbdad
     name: ecr-credentials-chart
@@ -23,7 +23,7 @@ entries:
     version: 0.4.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-30T10:04:44.118964+02:00"
+    created: "2022-11-01T10:43:51.672653+02:00"
     description: A Helm chart for Kubernetes
     digest: ba10cd359706990d237c57e0f42d606c428227ee2b9d05c3693336e62201d7a2
     name: ecr-credentials-chart
@@ -33,7 +33,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-30T10:04:44.11846+02:00"
+    created: "2022-11-01T10:43:51.671884+02:00"
     description: A Helm chart for Kubernetes
     digest: becf82e7469b93b34dc1aed051d2f3945bea4421c0ff35177b111999fec226cd
     name: ecr-credentials-chart
@@ -43,7 +43,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-30T10:04:44.118004+02:00"
+    created: "2022-11-01T10:43:51.67172+02:00"
     description: A Helm chart for Kubernetes
     digest: 01f87893ec902311e24eaaf67f1f1f04e3206221786d9a2b14cdfb9b5a6745a5
     name: ecr-credentials-chart
@@ -54,7 +54,7 @@ entries:
   kafka-cluster-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-30T10:04:44.127741+02:00"
+    created: "2022-11-01T10:43:51.679355+02:00"
     dependencies:
     - name: strimzi-kafka-operator
       repository: https://strimzi.io/charts
@@ -69,7 +69,7 @@ entries:
   outpost-billing-report-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-30T10:04:44.128392+02:00"
+    created: "2022-11-01T10:43:51.679734+02:00"
     description: A Helm chart for Kubernetes
     digest: 16f38be27d2ba26b387f7d5a4f11e307d0b2352784a0ee9298e26bfe21a6b6fb
     name: outpost-billing-report-chart
@@ -79,7 +79,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-30T10:04:44.128188+02:00"
+    created: "2022-11-01T10:43:51.679569+02:00"
     description: A Helm chart for Kubernetes
     digest: eaba7c6f7dcb622cb94fd5243f7ea6c235e7c34cd1d4fa5c0c2316be4ca24047
     name: outpost-billing-report-chart
@@ -90,7 +90,7 @@ entries:
   scripts-ts-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-30T10:04:44.129483+02:00"
+    created: "2022-11-01T10:43:51.680259+02:00"
     description: A Helm chart for Kubernetes
     digest: ccb1a16ed30adf9bdb79d53d8be04f7d66bd5bb62a27c671389e9b57e636866b
     name: scripts-ts-chart
@@ -100,7 +100,7 @@ entries:
     version: 0.2.4
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-30T10:04:44.129139+02:00"
+    created: "2022-11-01T10:43:51.680077+02:00"
     description: A Helm chart for Kubernetes
     digest: 001aa9b6850386b93d7d8d59cdfda09d4e83cbda47f344103ee5732d9a7d3980
     name: scripts-ts-chart
@@ -110,7 +110,7 @@ entries:
     version: 0.2.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-30T10:04:44.128782+02:00"
+    created: "2022-11-01T10:43:51.679906+02:00"
     description: A Helm chart for Kubernetes
     digest: dd5b910ad8e9fc896dda21be08ca71ed41733ad1a5066751ef01799348bea3a7
     name: scripts-ts-chart
@@ -121,7 +121,17 @@ entries:
   service-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.138328+02:00"
+    created: "2022-11-01T10:43:51.686125+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 91793fbf1ffaf71fd4d3af7464b78330a2e91e3c0739d6fbea1f6312ee10f8c4
+    name: service-chart
+    type: application
+    urls:
+    - service-chart-0.51.0.tgz
+    version: 0.51.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-01T10:43:51.685728+02:00"
     description: A Helm chart for Kubernetes
     digest: f514840ad34890659f9b3bad9bc07b834bacbdac39923e44e12957b12d220203
     name: service-chart
@@ -131,7 +141,7 @@ entries:
     version: 0.50.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.137699+02:00"
+    created: "2022-11-01T10:43:51.685333+02:00"
     description: A Helm chart for Kubernetes
     digest: ae8a50057c155c9465e2fec1a2d01c1b73c6c5a02a8479dcb96a4dd489f0b626
     name: service-chart
@@ -141,7 +151,7 @@ entries:
     version: 0.49.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.137049+02:00"
+    created: "2022-11-01T10:43:51.684932+02:00"
     description: A Helm chart for Kubernetes
     digest: e6d13f8ac81df5dc3fffb92c0d8922a3fbf5b6e26fb26d9d9a7c16bcb7d68970
     name: service-chart
@@ -151,7 +161,7 @@ entries:
     version: 0.48.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.135947+02:00"
+    created: "2022-11-01T10:43:51.684543+02:00"
     description: A Helm chart for Kubernetes
     digest: d3ca7122be719b6638f10dffb92976ef985859d88e847ac5b694ad62debf1342
     name: service-chart
@@ -161,7 +171,7 @@ entries:
     version: 0.47.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.135292+02:00"
+    created: "2022-11-01T10:43:51.684151+02:00"
     description: A Helm chart for Kubernetes
     digest: bb0c2974c7968c20c6d7d4b1b53638e25575757223f5351799cae7a38f59650d
     name: service-chart
@@ -171,7 +181,7 @@ entries:
     version: 0.46.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.134792+02:00"
+    created: "2022-11-01T10:43:51.683785+02:00"
     description: A Helm chart for Kubernetes
     digest: 6dfe1be4458b0cb35be93311e5bbbca590466366b97408d8c800246371b62def
     name: service-chart
@@ -181,7 +191,7 @@ entries:
     version: 0.45.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.134159+02:00"
+    created: "2022-11-01T10:43:51.683397+02:00"
     description: A Helm chart for Kubernetes
     digest: 2c4b7e287578193cc24fff139cce875e259138de3e6f6766a284fa743904a9d9
     name: service-chart
@@ -191,7 +201,7 @@ entries:
     version: 0.41.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.133471+02:00"
+    created: "2022-11-01T10:43:51.683049+02:00"
     description: A Helm chart for Kubernetes
     digest: 6ba16f7836d76445b4851c62ef8ffc60c94d0f8ad5f520460aaae72312d65289
     name: service-chart
@@ -201,7 +211,7 @@ entries:
     version: 0.40.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.132856+02:00"
+    created: "2022-11-01T10:43:51.682686+02:00"
     description: A Helm chart for Kubernetes
     digest: 4e1098619df18711adea5e94baec998c94592778d0f74037a6cc93ab674b9819
     name: service-chart
@@ -211,7 +221,7 @@ entries:
     version: 0.39.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.132227+02:00"
+    created: "2022-11-01T10:43:51.682335+02:00"
     description: A Helm chart for Kubernetes
     digest: ff87b4a3a608fd953ccb185c306549f1e4d7857ba6926d6ac93703ac1768f55a
     name: service-chart
@@ -221,7 +231,7 @@ entries:
     version: 0.38.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.131643+02:00"
+    created: "2022-11-01T10:43:51.681964+02:00"
     description: A Helm chart for Kubernetes
     digest: 006114d096da33d253b03f093e9fd8e9b92d0fb992718f9750896394ae1742e3
     name: service-chart
@@ -231,7 +241,7 @@ entries:
     version: 0.37.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.131076+02:00"
+    created: "2022-11-01T10:43:51.68139+02:00"
     description: A Helm chart for Kubernetes
     digest: 666ccaedf69c225aef8f55b1a78654951e73c4d7a4007d7a5f7e9417e4b93db6
     name: service-chart
@@ -241,7 +251,7 @@ entries:
     version: 0.35.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.130614+02:00"
+    created: "2022-11-01T10:43:51.681027+02:00"
     description: A Helm chart for Kubernetes
     digest: 22e17c4ba7f94adf0ac49e2c0f8c0f5aa43324a0cd62c3286ece4fb205670d18
     name: service-chart
@@ -251,7 +261,7 @@ entries:
     version: 0.34.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-30T10:04:44.130044+02:00"
+    created: "2022-11-01T10:43:51.68065+02:00"
     description: A Helm chart for Kubernetes
     digest: e5ba7c53afa978d5140318f3555c55a345a78ed36f07bb26e57755f88b69e901
     name: service-chart
@@ -262,7 +272,7 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 1.17.1
-    created: "2022-10-30T10:04:44.204472+02:00"
+    created: "2022-11-01T10:43:51.748212+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -301,7 +311,7 @@ entries:
     version: 0.18.5
   - apiVersion: v2
     appVersion: 1.17.1
-    created: "2022-10-30T10:04:44.19655+02:00"
+    created: "2022-11-01T10:43:51.740432+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -340,7 +350,7 @@ entries:
     version: 0.18.4
   - apiVersion: v2
     appVersion: 1.17.1
-    created: "2022-10-30T10:04:44.188734+02:00"
+    created: "2022-11-01T10:43:51.732785+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -379,7 +389,7 @@ entries:
     version: 0.18.3
   - apiVersion: v2
     appVersion: 1.17.1
-    created: "2022-10-30T10:04:44.1758+02:00"
+    created: "2022-11-01T10:43:51.720703+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -418,7 +428,7 @@ entries:
     version: 0.18.2
   - apiVersion: v2
     appVersion: 1.17.1
-    created: "2022-10-30T10:04:44.165429+02:00"
+    created: "2022-11-01T10:43:51.711214+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -457,7 +467,7 @@ entries:
     version: 0.18.1
   - apiVersion: v2
     appVersion: 1.17.1
-    created: "2022-10-30T10:04:44.155996+02:00"
+    created: "2022-11-01T10:43:51.702311+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -496,7 +506,7 @@ entries:
     version: 0.18.0
   - apiVersion: v2
     appVersion: 1.17.1
-    created: "2022-10-30T10:04:44.147116+02:00"
+    created: "2022-11-01T10:43:51.693627+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -533,4 +543,4 @@ entries:
     urls:
     - temporal-0.17.1.tgz
     version: 0.17.1
-generated: "2022-10-30T10:04:44.117314+02:00"
+generated: "2022-11-01T10:43:51.671388+02:00"
